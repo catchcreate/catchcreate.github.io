@@ -1,0 +1,33 @@
+:root {
+    --comp-site-height: 15000;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    transform: scale(calc(1920 / 1370 / 2));
+    transform-origin: calc(1920 / 2);
+ }
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.comp-container {
+    position: relative;
+}
+.comp-frame {
+    position: absolute;
+    height: calc(var(--comp-site-height) * 1px);
+}
+.comp-frame--left {
+    left: 0;
+}
+.comp-frame--right {
+    right: 0;
+}
+.comp-content {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
